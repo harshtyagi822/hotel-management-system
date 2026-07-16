@@ -1,0 +1,10 @@
+UI audit quick steps:
+1) Open hotel-management/index.html in browser.
+2) Confirm topbar links (Contact/Admin) are visible.
+3) Resize to 320px width: ensure navbar hamburger works and links are visible.
+4) Ensure Book Now button is clickable (click it).
+5) Scroll to counters: verify numbers are visible and animate.
+6) Open gallery: click tiles and verify lightbox layering.
+7) Open booking: verify summary visible and no overlay covers submit.
+8) Open dashboard: ensure charts render and not hidden.
+

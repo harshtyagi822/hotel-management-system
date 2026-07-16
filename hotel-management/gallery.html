@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Royal Palace Luxury Hotel | Gallery</title>
+  <meta name="description" content="Explore Royal Palace Luxury Hotel gallery — Rooms, Dining, Events, Pool, Spa, Lobby with premium filtering and lightbox." />
+
+  <meta property="og:title" content="Royal Palace Luxury Hotel | Gallery" />
+  <meta property="og:description" content="Explore Royal Palace Luxury Hotel gallery." />
+  <meta property="og:type" content="website" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex gap-3 align-items-center">
+        <span class="topbar-pill"><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+        <span class="topbar-pill"><i class="fa-solid fa-location-dot"></i> New Delhi • India</span>
+      </div>
+      <div class="d-flex gap-3 align-items-center">
+        <a class="topbar-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <a class="topbar-link" href="dashboard.html"><i class="fa-solid fa-user-shield"></i> Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Primary navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-mark"><i class="fa-solid fa-crown"></i></span>
+        <span class="brand-text">Royal Palace</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html" aria-current="page">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+          <li class="nav-item"><a class="nav-link" href="amenities.html">Amenities</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-gold ms-lg-3" href="booking.html"><i class="fa-solid fa-calendar-check me-2"></i> Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" style="min-height:55vh">
+    <div class="hero-video" aria-hidden="true">
+      <img class="hero-media" src="images/gallery-hero.jpg" alt="Royal gallery" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="hero-kicker"><span class="kicker-dot"></span> Cinematic Moments</div>
+          <h1 class="hero-title">Gallery with Royal Perspective</h1>
+          <p class="hero-sub">Filter by category and preview images in a premium lightbox experience.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section" style="padding-top:40px">
+    <div class="container">
+
+      <div class="row g-4 align-items-end">
+        <div class="col-lg-7" data-aos="fade-right">
+          <h2 class="section-title">Discover by Category</h2>
+          <p class="section-lead mb-0">Use filters to explore our rooms, dining, events, pool, spa, and lobby moments.</p>
+        </div>
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+            <button class="btn btn-outline-gold" type="button" data-filter="all" data-bs-toggle="button">All</button>
+            <button class="btn btn-outline-gold" type="button" data-filter="Rooms" data-bs-toggle="button">Rooms</button>
+            <button class="btn btn-outline-gold" type="button" data-filter="Dining" data-bs-toggle="button">Dining</button>
+            <button class="btn btn-outline-gold" type="button" data-filter="Events" data-bs-toggle="button">Events</button>
+            <button class="btn btn-outline-gold" type="button" data-filter="Pool" data-bs-toggle="button">Pool</button>
+            <button class="btn btn-outline-gold" type="button" data-filter="Spa" data-bs-toggle="button">Spa</button>
+            <button class="btn btn-outline-gold" type="button" data-filter="Lobby" data-bs-toggle="button">Lobby</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4" style="column-count:3; column-gap:18px;">
+        <!-- Gallery tiles (real layout; uses CSS columns for masonry effect) -->
+        <div class="gallery-tile" data-category="Rooms" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/deluxe.jpg" data-caption="Deluxe Room">
+          <img src="images/deluxe.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Deluxe Room">
+        </div>
+        <div class="gallery-tile" data-category="Rooms" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/executive.jpg" data-caption="Executive Room">
+          <img src="images/executive.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Executive Room">
+        </div>
+        <div class="gallery-tile" data-category="Dining" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/dining.jpg" data-caption="Fine Dining">
+          <img src="images/dining.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Fine Dining">
+        </div>
+        <div class="gallery-tile" data-category="Pool" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/pool.jpg" data-caption="Infinity Pool">
+          <img src="images/pool.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Infinity Pool">
+        </div>
+        <div class="gallery-tile" data-category="Spa" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/spa.jpg" data-caption="Luxury Spa">
+          <img src="images/spa.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Luxury Spa">
+        </div>
+        <div class="gallery-tile" data-category="Lobby" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/lobby.jpg" data-caption="Grand Lobby">
+          <img src="images/lobby.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Grand Lobby">
+        </div>
+        <div class="gallery-tile" data-category="Events" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/events.jpg" data-caption="Wedding & Events">
+          <img src="images/events.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Wedding & Events">
+        </div>
+        <div class="gallery-tile" data-category="Rooms" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/family-suite.jpg" data-caption="Family Suite">
+          <img src="images/family-suite.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Family Suite">
+        </div>
+        <div class="gallery-tile" data-category="Dining" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/chef.jpg" data-caption="Chef at Work">
+          <img src="images/chef.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Chef at Work">
+        </div>
+        <div class="gallery-tile" data-category="Spa" data-visible="1" style="break-inside:avoid; margin-bottom:18px;" data-full="images/relax.jpg" data-caption="Spa Relaxation">
+          <img src="images/relax.jpg" class="w-100" loading="lazy" style="border-radius:18px; border:1px solid rgba(255,255,255,.12);" alt="Spa Relaxation">
+        </div>
+      </div>
+
+      <div class="mt-4" data-aos="fade-up">
+        <div class="room-card p-4" style="background: rgba(255,255,255,.05); border-color: rgba(212,175,55,.22)" >
+          <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+            <div>
+              <h3 class="glass-title mb-1"><i class="fa-solid fa-camera-retro text-gold me-2"></i> Want a personalized itinerary?</h3>
+              <div class="text-white-50" style="font-size:14px">Send us your preferred dates — we’ll curate the perfect stay.</div>
+            </div>
+            <a class="btn btn-gold" href="booking.html"><i class="fa-solid fa-paper-plane me-2"></i> Plan Your Stay</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lightboxImg" src="" alt="Enlarged image" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand"><i class="fa-solid fa-crown"></i> Royal Palace</div>
+          <p class="footer-text">Experience Luxury Beyond Expectations — suites, dining, spa, and exceptional hospitality.</p>
+        </div>
+        <div class="footer-links">
+          <a href="rooms.html">Rooms</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="restaurant.html">Restaurant</a>
+          <a href="amenities.html">Amenities</a>
+          <a href="booking.html">Booking</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <div class="text-white-50">© <span id="year"></span> Royal Palace Luxury Hotel. All rights reserved.</div>
+        <div class="d-flex gap-3 social">
+          <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
+

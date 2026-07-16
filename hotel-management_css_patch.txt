@@ -1,0 +1,18 @@
+Apply this patch conceptually in styles.css:
+
+Add near top after navbar/.topbar rules:
+
+.navbar{z-index:9999; position:sticky; top:0;}
+.topbar{position:sticky; top:0; z-index:10000;}
+
+Also ensure top stacking for hero overlay/cards:
+.hero-video,.hero-overlay{z-index:0;}
+.hero-content{z-index:2;}
+
+Booking glass should stay above hero media but below navbar:
+.booking-glass{position:relative; z-index:2;}
+
+If lightbox exists:
+.lightbox{z-index:20000;}
+
+

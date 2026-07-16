@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Royal Palace Luxury Hotel | Register</title>
+  <meta name="description" content="Create an account for Royal Palace Luxury Hotel." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Royal Palace Luxury Hotel | Register" />
+  <meta property="og:description" content="Create an account" />
+  <meta property="og:type" content="website" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+  <!-- Top bar (matches site) -->
+  <div class="topbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex gap-3 align-items-center">
+        <span class="topbar-pill"><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+        <span class="topbar-pill"><i class="fa-solid fa-location-dot"></i> New Delhi • India</span>
+      </div>
+      <div class="d-flex gap-3 align-items-center">
+        <a class="topbar-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <a class="topbar-link" href="dashboard.html"><i class="fa-solid fa-user-shield"></i> Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar (matches site) -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Primary navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-mark"><i class="fa-solid fa-crown"></i></span>
+        <span class="brand-text">Royal Palace</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+          <li class="nav-item"><a class="nav-link" href="amenities.html">Amenities</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-gold ms-lg-3" href="booking.html">
+          <i class="fa-solid fa-calendar-check me-2"></i> Book Now
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Auth Hero -->
+  <header class="auth-hero" role="banner">
+    <div class="auth-hero-overlay" aria-hidden="true"></div>
+
+    <div class="container auth-hero-content">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6" data-aos="fade-up">
+          <div class="auth-card shadow">
+            <div class="auth-card-header">
+              <div class="auth-badge">
+                <i class="fa-solid fa-gem"></i>
+                Create Account
+              </div>
+              <h1 class="auth-title">Register</h1>
+              <p class="auth-subtitle">Join Royal Palace for exclusive offers, bookings, and hospitality perks.</p>
+            </div>
+
+            <!-- Backend message area -->
+            <div id="authMessage" class="auth-message" aria-live="polite" role="alert" style="display:none;"></div>
+
+            <form id="registerForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">
+                  <i class="fa-regular fa-id-card me-2"></i>Full Name
+                </label>
+                <div class="auth-input-wrap">
+                  <input
+                    type="text"
+                    class="form-control auth-input"
+                    id="fullName"
+                    name="full_name"
+                    placeholder="e.g., Aarav Sharma"
+                    required
+                    minlength="2"
+                    autocomplete="name" />
+                </div>
+                <div class="invalid-feedback">Please enter your full name.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="registerEmail" class="form-label">
+                  <i class="fa-regular fa-envelope me-2"></i>Email
+                </label>
+                <div class="auth-input-wrap">
+                  <input
+                    type="email"
+                    class="form-control auth-input"
+                    id="registerEmail"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                    autocomplete="email" />
+                </div>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">
+                  <i class="fa-solid fa-phone me-2"></i>Phone Number
+                </label>
+                <div class="auth-input-wrap">
+                  <input
+                    type="tel"
+                    class="form-control auth-input"
+                    id="phone"
+                    name="phone"
+                    placeholder="10-digit number"
+                    required
+                    inputmode="numeric"
+                    pattern="\\d{10}"
+                    autocomplete="tel" />
+                </div>
+                <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="registerPassword" class="form-label">
+                  <i class="fa-solid fa-lock me-2"></i>Password
+                </label>
+
+                <div class="auth-input-wrap auth-password-wrap">
+                  <input
+                    type="password"
+                    class="form-control auth-input pe-5"
+                    id="registerPassword"
+                    name="password"
+                    placeholder="Create a secure password"
+                    required
+                    minlength="6"
+                    autocomplete="new-password" />
+
+                  <button
+                    type="button"
+                    class="auth-eye"
+                    id="toggleRegisterPassword"
+                    aria-label="Show password"
+                    title="Show/Hide Password">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+                <div class="invalid-feedback">Password must be at least 6 characters.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">
+                  <i class="fa-solid fa-shield-halved me-2"></i>Confirm Password
+                </label>
+
+                <div class="auth-input-wrap auth-password-wrap">
+                  <input
+                    type="password"
+                    class="form-control auth-input pe-5"
+                    id="confirmPassword"
+                    name="confirm_password"
+                    placeholder="Re-enter your password"
+                    required
+                    minlength="6"
+                    autocomplete="new-password" />
+
+                  <button
+                    type="button"
+                    class="auth-eye"
+                    id="toggleConfirmPassword"
+                    aria-label="Show confirm password"
+                    title="Show/Hide Password">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+
+                <div class="invalid-feedback" id="confirmPasswordFeedback">Passwords must match.</div>
+              </div>
+
+              <div class="d-grid mt-3">
+                <button id="registerSubmitBtn" class="btn btn-gold auth-btn" type="submit">
+                  <span class="btn-label"><i class="fa-solid fa-user-plus me-2"></i>Register</span>
+                  <span id="registerLoading" class="auth-spinner" aria-hidden="true" style="display:none;"></span>
+                </button>
+              </div>
+
+              <div class="auth-footer-links text-center mt-4">
+                <span class="text-white-50">Already have an account?</span>
+                <a href="login.html" class="auth-link ms-2">
+                  <i class="fa-solid fa-right-to-bracket me-1"></i>Login
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-bottom-glow" aria-hidden="true"></div>
+  </header>
+
+  <!-- Footer (matches site) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand"><i class="fa-solid fa-crown"></i> Royal Palace</div>
+          <p class="footer-text">Experience Luxury Beyond Expectations — suites, dining, spa, and exceptional hospitality.</p>
+        </div>
+        <div class="footer-links">
+          <a href="rooms.html">Rooms</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="restaurant.html">Restaurant</a>
+          <a href="amenities.html">Amenities</a>
+          <a href="booking.html">Booking</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <div class="text-white-50">© <span id="year"></span> Royal Palace Luxury Hotel. All rights reserved.</div>
+        <div class="d-flex gap-3 social">
+          <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    var yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+    if (window.AOS && typeof window.AOS.init === 'function') {
+      AOS.init({ once: true, duration: 900, easing: 'ease-out-cubic' });
+    }
+  </script>
+
+  <script src="js/register.js"></script>
+</body>
+</html>
+
